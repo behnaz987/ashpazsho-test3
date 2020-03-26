@@ -1,14 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Footer from './components/Footer'
+import RTL from './tools/RTL'
+import {createMuiTheme, ThemeProvider} from "@material-ui/core/styles";
+import {CssBaseline} from "@material-ui/core";
+
+function Index() {
+    const theme = createMuiTheme({
+        direction: "rtl",
+        typography: {
+            fontFamily: "IRANSans",
+            fontWeight: 'normal'
+        },
+        overrides: {
+            MuiButton: {
+                root: {
+                    minWidth: "unset"
+                }
+            }
+        }
+    });
+
+    return (
+        <ThemeProvider theme={theme}>
+            <CssBaseline>
+                <RTL>
+                    <Footer/>
+                </RTL>
+            </CssBaseline>
+        </ThemeProvider>
+    );
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Index/>,
+    document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
