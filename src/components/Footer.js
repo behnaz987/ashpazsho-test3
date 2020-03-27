@@ -1,6 +1,7 @@
 import React from "react";
 import {Grid, makeStyles, Typography} from "@material-ui/core";
-import pic2 from '../assets/logo.png'
+import pic2 from '../assets/logo.png';
+import pic from '../assets/1.png'
 import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined';
 import CallOutlinedIcon from '@material-ui/icons/CallOutlined';
 import {useWidth} from "../tools/tools";
@@ -8,7 +9,7 @@ import {useWidth} from "../tools/tools";
 const useStyle = makeStyles(theme => ({
     root: {
         paddingRight: useWidth(677, 'lg'),
-        //backgroundImage: `url(${pic})`,
+        backgroundImage: `url(${pic})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         width: '100%',
