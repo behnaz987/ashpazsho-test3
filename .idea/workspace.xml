@@ -2,54 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="164c6e09-d457-459d-977b-6cc22380f2f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Group 17902.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Group 17903.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/arme-edareh-rangi-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/enamad_icon__text_color_blue_1024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/magnifying-glass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/pizza.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/resfooter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drawer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ResponsiveFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/eot/IRANSans(FaNum)_Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/eot/IRANSansWeb(FaNum).eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/eot/IRANSansWeb(FaNum)_Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/eot/IRANSansWeb(FaNum)_Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/eot/IRANSansWeb(FaNum)_Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/ttf/IRANSansWeb(FaNum).ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/ttf/IRANSansWeb(FaNum)_Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/woff/IRANSansWeb(FaNum).woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/woff/IRANSansWeb(FaNum)_Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/woff/IRANSansWeb(FaNum)_Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/woff/IRANSansWeb(FaNum)_Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/woff2/IRANSansWeb(FaNum).woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/woff2/IRANSansWeb(FaNum)_Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/FoodCategory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools/FlexBoxContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools/FlexBoxItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools/RTL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools/strings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools/tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/arrow-pointing-to-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/call.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/instagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/pin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/telegram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DownloadButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/pizza.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/pizza.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ResponsiveFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResponsiveFooter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/FoodCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/FoodCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/strings.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -84,8 +51,8 @@
       <recent name="C:\Users\bhgha\WebstormProjects\ashpazsho\src\assets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\bhgha\WebstormProjects\ashpazsho\src" />
       <recent name="C:\Users\bhgha\WebstormProjects\ashpazsho\src\assets" />
+      <recent name="C:\Users\bhgha\WebstormProjects\ashpazsho\src" />
       <recent name="C:\Users\bhgha\WebstormProjects\ashpazsho\src\tools" />
     </key>
   </component>
@@ -126,8 +93,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584971583757</updated>
-      <workItem from="1584971592662" duration="88490000" />
+      <workItem from="1584971592662" duration="138511000" />
     </task>
+    <task id="LOCAL-00001" summary="all">
+      <created>1585248606772</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585248606772</updated>
+    </task>
+    <task id="LOCAL-00002" summary="footers">
+      <created>1585326406821</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585326406821</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,5 +125,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="all" />
+    <MESSAGE value="footers" />
+    <option name="LAST_COMMIT_MESSAGE" value="footers" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

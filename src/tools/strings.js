@@ -1,9 +1,16 @@
 export const strings = {
     card: {
-        pizza: 'پیتزای سبزیجات',
+        vpizza: 'پیتزای سبزیجات',
         fastFood: 'فست فود',
         free: 'رایگان',
-        freeDownload: 'دانلوذ رایگان'
+        freeDownload: 'دانلود رایگان',
+
+    },
+    footer: {
+        add: 'آدرس',
+        phone: 'شماره تماس',
+        phoneNumber: '02166715466',
+        socialMedia: 'لینک شبکه های اجتماعی',
 
     }
 

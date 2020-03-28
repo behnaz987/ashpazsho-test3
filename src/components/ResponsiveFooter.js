@@ -20,18 +20,16 @@ const useStyles = makeStyles(theme => ({
         //paddingTop:'7.77%',
         //paddingLeft:'7.88%',
         //backgroundRepeat:'no-repeat'
-        backgroundImage: `url(${resfooter})`,
+        //backgroundImage: `url(${resfooter})`,
     },
     container: {
-        // height:useSize(235.59,65).height,
-        // width:useSize(235.59,65).width,
-        //paddingTop:'7.77%',
-        //paddingLeft:'7.88%'
         minHeight: '100vh',
         height: useSize(360, 527).height,
         width: useSize(360, 527).width,
         backgroundImage: `url(${resfooter})`,
-
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
     }
 }));
 export default function ResponsiveFooter() {
