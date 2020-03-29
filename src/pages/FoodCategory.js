@@ -5,66 +5,35 @@ import Hidden from "@material-ui/core/Hidden";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import searchIcon from '../assets/magnifying-glass.png';
-import {useWidth} from "../tools/tools";
+import {useBorderRadius, useFont, usePadding, useSize, useWidth} from "../tools/webResponsive";
+import FoodCard from "../components/Card";
+import clsx from "clsx";
+import Footer from '../components/Footer/Footer'
+import Header from "../components/Header/Header";
+import pizza from '../assets/pizza.png';
+import cake from '../assets/cake.png'
+import {strings} from '../tools/strings';
+import HiddenScroll from "../components/hiddenScroll";
 
 const useStyles = makeStyles(theme => ({
-    learningCourseTypography: {
-        fontWeight: 500,
-        [theme.breakpoints.up('md')]: {
-            fontSize: useWidth(28, 'md'),
-        },
-        [theme.breakpoints.up('lg')]: {
-            fontSize: useWidth(28, 'lg'),
-        },
-        [theme.breakpoints.up('xl')]: {
-            fontSize: 28
-        },
-    },
-    loremIpsumTypography: {
-        [theme.breakpoints.up('md')]: {
-            fontSize: useWidth(22, 'md'),
-        },
-        [theme.breakpoints.up('lg')]: {
-            fontSize: useWidth(22, 'lg'),
-        },
-        [theme.breakpoints.up('xl')]: {
-            fontSize: 22
-        },
-    },
-    searchButton: {
-        [theme.breakpoints.up('md')]: {
-            width: useWidth(66, 'md'),
-            height: useWidth(60, 'md'),
-            borderRadius: useWidth(17, 'md'),
-        },
-        [theme.breakpoints.up('lg')]: {
-            width: useWidth(66, 'lg'),
-            height: useWidth(60, 'lg'),
-            borderRadius: useWidth(17, 'lg'),
-        },
-        [theme.breakpoints.up('xl')]: {
-            width: 66,
-            height: 60,
-            borderRadius: 17,
-        },
-        background: '#FF364A',
-    },
-    searchIcon: {
-        [theme.breakpoints.up('md')]: {
-            width: useWidth(28, 'md'),
-            height: useWidth(28, 'md'),
-        },
-        [theme.breakpoints.up('lg')]: {
-            width: useWidth(28, 'lg'),
-            height: useWidth(28, 'lg'),
-        },
-        [theme.breakpoints.up('xl')]: {
-            width: 28,
-            height: 28,
-        }
-    },
 
+    backgroundMainColor: {
+        background: '#FF364A'
+    },
+    fontMainColor: {
+        color: '#FF364A'
+    },
+    divider: {
+        height: 1,
+    },
+    recipeChip: {
+        borderColor: '#03B40F',
+    },
+    recommendedCoursesChip: {
+        backgroundColor: '#FFDD00'
+    }
 }));
+
 const textFieldStyle = makeStyles(theme => ({
     root: {
         '& .MuiOutlinedInput-root': {
@@ -105,19 +74,19 @@ const textFieldStyle = makeStyles(theme => ({
 }));
 
 export default function App(props) {
-
+    const card = strings.card;
     const classes = useStyles();
     const textFieldClasses = textFieldStyle();
-    //
-    // const {pageTest1} = strings;
 
     return (
-        <Container fullWidth>
-            <Grid container direction='column'> {/* Whole page wrapper */}
-                <Grid item container direction='row' justify='space-between'>
-                    <Grid item>
-                        <Typography className={classes.learningCourseTypography}>
-                            دسته بندی غذایی/ حلوا
+        <div>
+            <Header/>
+            <Container>
+                <Grid container direction='column'> {/* Whole page wrapper */}
+                    <Grid item container direction='row' justify='space-between' alignItems='center'>
+                        <Grid item>
+                            <Typography className={useFont(28, 'medium')}>
+                                دسته بندی غذایی/حلوا
                         </Typography>
                     </Grid>
                     <Hidden mdDown>
@@ -125,17 +94,52 @@ export default function App(props) {
                             <TextField
                                 classes={textFieldClasses}
                                 variant='outlined'
-                                placeholder='دستور غذای مورد نیاز خود را جستجو کنید'
+                                placeholder='دوره مورد نظر خود را جستجو کنید'
                                 InputProps={{
-                                    endAdornment: <Button className={classes.searchButton}>
-                                        <img src={searchIcon} alt='search-icon' className={classes.searchIcon}/>
-                                    </Button>
+                                    endAdornment: (
+                                        <Button
+                                            className={clsx([useSize(66, 60), useBorderRadius(17), classes.backgroundMainColor])}
+                                        >
+                                            <img src={searchIcon} alt='search-icon' className={useSize(28, 28)}/>
+                                        </Button>
+                                    )
                                 }}
                             />
                         </Grid>
                     </Hidden>
                 </Grid>
+                    <HiddenScroll horizontal>
+                        <Grid item container justify='space-between' wrap='nowrap' className={usePadding(69, 533)}>
+                            <Grid item lg={3} md={4}>
+                                <FoodCard img={pizza}
+                                          title={card.vpizza}
+                                          type={card.fastFood}
+                                          duration={card.clock}/>
+                            </Grid>
+                            <Grid item lg={3} md={4}>
+                                <FoodCard
+                                    img={cake}
+                                    title={card.cake}
+                                    type={card.sweets}
+                                    duration={card.clock}/>
+                            </Grid>
+                            <Grid item lg={3} md={4}>
+                                <FoodCard img={pizza}
+                                          title={card.vpizza}
+                                          type={card.fastFood}
+                                          duration={card.clock}/>
+                            </Grid>
+                            <Grid item lg={3} md={4}>
+                                <FoodCard img={cake}
+                                          title={card.cake}
+                                          type={card.sweets}
+                                          duration={card.clock}/>
+                            </Grid>
+                        </Grid>
+                    </HiddenScroll>
             </Grid>
         </Container>
+            <Footer/>
+        </div>
     );
 }

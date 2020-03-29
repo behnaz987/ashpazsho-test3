@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Footer from './components/Footer'
 import RTL from './tools/RTL'
 import {createMuiTheme, ThemeProvider} from "@material-ui/core/styles";
 import {CssBaseline} from "@material-ui/core";
+import App from "./pages/FoodCategory";
 
 function Index() {
     const theme = createMuiTheme({
@@ -14,10 +14,24 @@ function Index() {
             fontFamily: "IRANSans",
             fontWeight: 'normal'
         },
+        breakpoints: {
+            values: {
+                xs: 360,
+                sm: 600,
+                md: 960,
+                lg: 1280,
+                xl: 1920
+            }
+        },
         overrides: {
             MuiButton: {
                 root: {
                     minWidth: "unset"
+                }
+            },
+            MuiRating: {
+                root: {
+                    textAlign: undefined
                 }
             }
         }
@@ -27,7 +41,7 @@ function Index() {
         <ThemeProvider theme={theme}>
             <CssBaseline>
                 <RTL>
-                    <Footer/>
+                    <App/>
                 </RTL>
             </CssBaseline>
         </ThemeProvider>

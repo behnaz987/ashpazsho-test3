@@ -13,8 +13,6 @@
       <change afterPath="$PROJECT_DIR$/src/tools/webResponsive.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Drawer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/ResponsiveFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/ResponsiveFooter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/WebFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/WebFooter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ResponsiveFooter.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
@@ -104,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584971583757</updated>
-      <workItem from="1584971592662" duration="187785000" />
+      <workItem from="1584971592662" duration="193198000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <created>1585248606772</created>
@@ -134,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585486340914</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finalFooter2">
+      <created>1585514904437</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585514904437</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +162,8 @@
     <MESSAGE value="footers" />
     <MESSAGE value="newfooter" />
     <MESSAGE value="finalFooter" />
-    <option name="LAST_COMMIT_MESSAGE" value="finalFooter" />
+    <MESSAGE value="finalFooter2" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalFooter2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

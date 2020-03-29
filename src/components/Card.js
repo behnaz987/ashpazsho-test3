@@ -1,75 +1,93 @@
 import React from "react";
 import {Divider, Grid, makeStyles, Typography} from "@material-ui/core";
-import pizza from '../assets/pizza.png'
 import Button from "@material-ui/core/Button";
+import CardMedia from "@material-ui/core/CardMedia";
+import Card from "@material-ui/core/Card";
+import clsx from "clsx";
+import {useBorderRadius, useFont, useMargin, useMinWidth, usePadding, useSize} from "../tools/webResponsive";
+import CardContent from "@material-ui/core/CardContent";
+import clock from '../assets/clock.png'
+import DownloadButton from "./DownloadButton";
 import {strings} from '../tools/strings';
-import AccessTimeOutlinedIcon from '@material-ui/icons/AccessTimeOutlined';
-import ArrowBackOutlinedIcon from '@material-ui/icons/ArrowBackOutlined';
 
 const useStyles = makeStyles(theme => ({
-    root: {
-        //flexGrow: 1,
-        height: '387px',
-        width: '324px',
-        //backgroundImage: `url(${pizza})`,
-        backgroundRepeat: 'no-repeat'
+    bot: {
+        padding: '0 !important'
     },
     card: {
-        // backgroundColor:'red'
+        boxShadow: "0 3px 20px rgba(205, 22, 38, 0.16)",
     },
-    img: {
-        width: '100%',
-        height: '100%',
-        radius: '0px'
+    ccontent: {
+        background: 'white',
+        transform: 'translateY(-15px)',
     }
 }));
-export default function Card() {
+export default function FoodCard(props) {
+    const {img, title, duration, type} = props;
     const classes = useStyles();
     const {card} = strings;
     return (
-        <Grid container className={classes.root}>
-            <Grid item container wrap='nowrap'>
-                <img src={pizza} className={classes.img}/>
-            </Grid>
-            <Grid item container className={classes.card} direction='column'
-                  style={{paddingRight: '9.3%', paddingLeft: '9.3%'}} justify='space-between'>
-                <Grid item container direction='row' justify='space-between'>
-                    <Grid item>
-                        <Typography>
-                            {card.pizza}
-                        </Typography>
-                    </Grid>
-                    <Grid item>
-                        <Typography>
-                            {card.fastFood}
-                        </Typography>
-                    </Grid>
-                </Grid>
-                <Grid item container direction='row' wrap='nowrap' justify='space-between'>
-                    <Grid item container direction='row' lg={2} aligncontent='center'>
+        <Card className={clsx([classes.card, useSize(387, undefined)
+            , useBorderRadius(60, 60, 60, 60),
+            useMargin(25)
+        ])}>
 
-                        <Grid item lg={6}>
-                            <AccessTimeOutlinedIcon fontSize='small'/>
+            <CardMedia
+                className={clsx([useSize(387, 324), useMinWidth(387)])}
+                image={img}
+            />
+            <CardContent className={clsx([useSize(387, undefined), classes.ccontent, useBorderRadius(30, 30)])}>
+                <Grid container direction='column' alignItems='center'
+                      justify='space-between'> {/* whole card wrapper */}
+                    <Grid container item justify='space-between' alignItems='center'
+                          style={{height: '100%'}}> {/* first row */}
+                        <Grid item className={usePadding(30)}>
+                            <Typography style={{color: 'red'}} className={useFont(22, 'medium')}>
+                                {title}
+                            </Typography>
                         </Grid>
-                        <Grid item lg={6}>
-                            <Typography>1:45</Typography>
+                        <Grid item className={usePadding(30)}>
+                            <Button
+                                variant='contained'
+                                style={{backgroundColor: '#03B40F', color: 'white'}}
+                                className={clsx([useSize(98, 40),
+                                    useBorderRadius(22),
+                                    useMinWidth(34),
+                                    useFont(13),
+                                    classes.bot])}
+                            >
+                                {type}
+
+                            </Button>
                         </Grid>
                     </Grid>
-                    <Grid item><Divider orientation='vertical'/></Grid>
-                    <Grid item>
-                        <Typography>{card.free}</Typography>
-                    </Grid>
 
-                </Grid>
-                <Grid item container direction='row' justify='center'>
-                    <Grid item alignItems='center'>
-                        <Button variant='contained' endIcon={<ArrowBackOutlinedIcon style={{backgroundColor: 'red'}}/>}>دانلود
-                            رایگان</Button>
+                    <Grid item container wrap='nowrap' justify='space-between'> {/* second row */}
+                        <Grid item container alignItems='center' style={{width: 'auto'}}>
+                            <Grid item className={usePadding(30)}>
+                                <img src={clock} alt='clock' className={useSize(23.5, 23.5)}/>
+                            </Grid>
+                            <Grid item className={usePadding(30)} style={{paddingRight: '10%'}}>
+                                <Typography className={useFont(24)}>
+                                    {duration}
+                                </Typography>
+                            </Grid>
+                        </Grid>
+                        <Grid item className={usePadding(30)}>
+                            <Divider orientation='vertical'/>
+                        </Grid>
+                        <Grid item className={usePadding(30)}>
+                            <Typography style={{color: '#03B40F'}} className={clsx([useFont(22)])}>
+                                {card.free}
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid item className={usePadding(30)}> {/* third row */}
+                        <DownloadButton/>
+
                     </Grid>
                 </Grid>
-
-            </Grid>
-        </Grid>
+            </CardContent>
+        </Card>
     );
-
 }
