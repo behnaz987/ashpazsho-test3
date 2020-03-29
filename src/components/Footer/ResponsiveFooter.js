@@ -33,7 +33,6 @@ export default function ResponsiveFooter() {
                   usePadding(undefined, undefined, 28.5, undefined)])}
         >
             <Grid item container direction='row'
-                // spacing={2}
                   alignContent='center' alignItems='baseline'>{/*first row*/}
                 <Grid item>
                     <img src={pin} className={useSize(20, 21)}/>
@@ -93,7 +92,6 @@ export default function ResponsiveFooter() {
                 </Grid>
             </Grid>
             <Grid item container
-                // spacing={2} replace spacings with margin/padding
                   direction='row' justify='center'
                   alignItems='baseline' className={usePadding(43)}> {/*fifth row*/}
                 <Grid item className={useSize(51, 51)}>

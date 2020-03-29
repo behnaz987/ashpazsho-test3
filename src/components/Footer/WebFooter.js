@@ -8,7 +8,7 @@ import tel from '../../assets/telegram.png';
 import ins from '../../assets/instagram.png';
 import edare from '../../assets/arme-edareh-rangi-1.png';
 import enamad from '../../assets/enamad_icon__text_color_blue_1024.png';
-import {useFont, usePadding, useSize, useWidth} from "../../tools/webResponsive";
+import {useFont, useMargin, usePadding, useSize, useWidth} from "../../tools/webResponsive";
 import clsx from "clsx";
 import {strings} from "../../tools/strings";
 
@@ -26,7 +26,8 @@ const useStyle = makeStyles(theme => ({
 
     },
     content: {
-        color: 'white'
+        color: 'white',
+        paddingLeft: '3%'
     },
 
 }));
@@ -43,7 +44,8 @@ export default function WebFooter(props) {
                     <img src={logo} className={classes.logo}/>
                 </Grid>
 
-                <Grid item container wrap='nowrap' spacing={2}
+                <Grid item container wrap='nowrap'
+
                       className={clsx([usePadding(72)])} alignContent='center' alignItems='baseline'
                 > {/*second row*/}
                     <Grid item>
@@ -65,13 +67,13 @@ export default function WebFooter(props) {
                     </Grid>
                 </Grid>
                 <Grid
-                    item container wrap='nowrap' spacing={2}
-                    className={clsx([usePadding(34)])} alignContent='center' alignItems='baseline'
+                    item container wrap='nowrap'
+                    className={clsx([useMargin(90)])} alignContent='center' alignItems='baseline'
                 > {/*third row*/}
                     <Grid item>
                         <img src={call} className={clsx([useSize(48, 48)])}/>
                     </Grid>
-                    <Grid item className={clsx([useFont(24, 'medium'), classes.content])}>
+                    <Grid item wrap='nowrap' className={clsx([useFont(24, 'medium'), classes.content])}>
                         <Typography>
                             {footer.phone}
                         </Typography>
@@ -86,15 +88,19 @@ export default function WebFooter(props) {
 
             </Grid>
             <Grid item wrap='nowrap' container xs={4} sm={4} lg={4} xl={4} md={4}
-                  style={{paddingTop: '8%'}}
-                  justify='flex-start'
-                  direction='column' spacing={4}> {/*second column*/}
+                  style={{paddingTop: '5%'}}
+                  justify='space-evenly'
+                  direction='column'
+
+            > {/*second column*/}
                 <Grid item className={clsx([useFont(24, 'medium'), classes.content])}> {/*first row*/}
                     <Typography>
                         {footer.socialMedia}
                     </Typography>
                 </Grid>
-                <Grid item container wrap='nowrap' alignItems='baseline' spacing={2}> {/*second row*/}
+                <Grid item container wrap='nowrap' alignItems='baseline'
+
+                > {/*second row*/}
                     <Grid item>
                         <img src={tel} className={clsx([useSize(52.47, 45.22)])}/>
                     </Grid>
@@ -104,7 +110,9 @@ export default function WebFooter(props) {
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid item container wrap='nowrap' alignItems='baseline' spacing={2}>{/*third row*/}
+                <Grid item container wrap='nowrap' alignItems='baseline'
+
+                >{/*third row*/}
                     <Grid item>
                         <img src={ins} className={clsx([useSize(42, 42)])}/>
                     </Grid>
@@ -114,7 +122,9 @@ export default function WebFooter(props) {
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid item container wrap='nowrap' spacing={2} alignItems='baseline'> {/*fourth row*/}
+                <Grid item container wrap='nowrap'
+
+                      alignItems='baseline'> {/*fourth row*/}
                     <Grid item>
                         <img src={enamad} className={clsx([useSize(95, 95)])}/>
 
